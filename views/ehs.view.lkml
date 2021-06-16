@@ -67,8 +67,12 @@ view: ehs {
     sql: ${TABLE}."RISKSEVERITY" ;;
   }
 
+
+
   measure: count {
     type: count
-    drill_fields: []
+    drill_fields: [riskassessment,maininjurybodypart]
   }
+
+
 }
